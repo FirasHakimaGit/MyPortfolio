@@ -1,0 +1,111 @@
+/* General Styles */
+.contact {
+  margin: 0 auto;
+  padding: 50px 20px;
+  max-width: 1200px; /* Center and limit width for better layout */
+  margin-left: 200px; /* Adjust this value based on the sidebar width */
+}
+
+.card0 {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 8px; /* Rounded corners for a modern look */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth shadow transition */
+}
+
+.card0:hover {
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.card2 {
+  margin: 0 20px; /* Reduced margin for a more compact layout */
+}
+
+.card1 .image {
+  padding: 20px;
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.border-line {
+  border-right: 1px solid #dcdcdc; /* Softer border color */
+}
+
+.line {
+  height: 1px;
+  width: 50%;
+  background-color: #dcdcdc; /* Softer line color */
+  margin-top: 15px;
+}
+
+.or {
+  display: flex;
+  width: auto; /* Adjusted width for better alignment */
+  font-weight: 600;
+  color: #555; /* Darker text color for better contrast */
+  align-items: center;
+  justify-content: center;
+}
+
+::placeholder {
+  color: #a0a0a0;
+  opacity: 1;
+  font-weight: 300;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: 1px solid #ccc; /* Subtle border color */
+  border-radius: 4px; /* Slightly rounded corners */
+  margin-top: 8px;
+  width: 100%;
+  color: #333; /* Darker text color */
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+input:focus,
+textarea:focus {
+  border-color: #1e90ff; /* Blue border color on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(30, 144, 255, 0.3); /* Subtle shadow on focus */
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.button {
+  background-color: #1e90ff; /* Modern blue color */
+  color: white;
+  border-radius: 4px; /* Slightly rounded corners */
+  padding: 12px 20px; /* Larger padding for better click area */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.button:hover {
+  background-color: #1c86ee; /* Slightly darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .contact {
+    padding: 20px;
+    margin: 0;
+  }
+
+  .contact .card2 {
+    margin: 0;
+  }
+
+  .contact .card2 h6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

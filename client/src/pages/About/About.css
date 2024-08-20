@@ -1,0 +1,89 @@
+/* General Styles */
+.about {
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 900px; /* Increased max-width for more spacious layout */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px; /* Slightly larger shadow for depth */
+  background-color: #f0f4f8; /* Softer light background for readability */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  position: relative; /* For positioning child elements */
+  overflow: hidden; /* Hide overflow for circular image effect */
+}
+
+.about-img {
+  display: flex;
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+  margin-bottom: 20px;
+}
+
+.about-img img {
+  border-radius: 50%; /* Make image circular */
+  width: 400px; /* Increased width for a larger circle */
+  height: 400px; /* Increased height for a larger circle */
+  object-fit: cover; /* Ensure image covers the circle */
+  animation: pulse 2s infinite; /* Pulse animation */
+}
+
+/* Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #444; /* Slightly lighter dark color for text */
+}
+
+.about-content h1 {
+  color: #3498db; /* Modern blue color */
+  font-family: 'Roboto', Arial, sans-serif; /* Modern and clean font */
+  border-bottom: 4px solid #3498db; /* Enhanced border */
+  text-align: center;
+  margin: 0;
+  font-size: 2.5em; /* Larger font size for impact */
+}
+
+.about-content p {
+  text-align: justify;
+  padding: 15px 20px; /* Reduced padding for better spacing */
+  line-height: 1.8; /* Improved readability */
+  color: #555; /* Softer text color */
+}
+
+/* Dark Mode Styles */
+#dark .about {
+  box-shadow: none;
+  background-color: #1c1c1c; /* Dark background for dark mode */
+}
+
+#dark .about-content h1 {
+  color: #a1c4fd; /* Light blue color for dark mode */
+  border-bottom: 4px solid #a1c4fd; /* Enhanced border */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .about {
+    margin: 15px;
+    padding: 15px;
+    width: 100%;
+  }
+  .about-content h1 {
+    margin-top: 10px;
+    font-size: 1.8em; /* Adjust font size for smaller screens */
+  }
+}

@@ -1,0 +1,47 @@
+/* General Sidebar Styles */
+.sidebar-section {
+  display: flex;
+  background-color: #8bc0f4; /* Light, soft background color */
+}
+
+.sidebar {
+  height: 100vh;
+  background: linear-gradient(135deg, 	#D3D3D3 0%, #d0e3f0 100%); /* Gradient background for a modern look */
+  width: 70px; /* Narrower width */
+  position: fixed;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  transition: width 0.3s ease; /* Smooth width transition */
+}
+
+.sidebar-toggle {
+  width: 200px;
+}
+
+.sidebar-toggle-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sidebar-toggle-icons p svg {
+  background-color: #f29f67; /* Soft color */
+  color: rgb(142, 232, 248);
+  padding: 10px;
+  border-radius: 50%; /* Circular button for modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Sidebar toggle hover effect */
+.sidebar-toggle-icons p svg:hover {
+  background-color: #f7a35c; /* Slightly darker shade for hover effect */
+  transform: scale(1.1); /* Slightly larger on hover */
+}
+
+/* ==== MOBILE VIEW ========== */
+@media (max-width: 600px) {
+  .sidebar {
+    display: none; /* Hide sidebar on small screens */
+  }
+}

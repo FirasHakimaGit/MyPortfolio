@@ -1,0 +1,37 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* DARK MODE */
+#dark {
+  background-color: #2c2c2c; /* Darker background for better contrast */
+  color: #f4f4f4; /* Light text color for readability */
+}
+
+/* ======================= */
+
+/* General Footer Styles */
+.footer {
+  background-color: #f8f9fa; /* Light background for footer */
+  color: #333; /* Dark text color */
+  padding: 20px;
+  text-align: center; /* Center align text */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -4px 8px; /* Subtle shadow for footer */
+}
+
+/* Dark Mode Footer */
+#dark .footer {
+  background-color: #3a3a3a; /* Dark background for footer in dark mode */
+  color: #e0e0e0; /* Light text color for footer in dark mode */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .footer {
+    margin: 20px 0; /* Consistent vertical margin */
+    padding: 15px; /* Slightly reduced padding */
+  }
+}
